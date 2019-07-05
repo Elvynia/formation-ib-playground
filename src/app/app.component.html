@@ -1,6 +1,15 @@
+<h1>Bienvenue, nous somme le {{ now | date:'medium':undefined:'fr-FR' | uppercase }}</h1>
+<h2>Valeur actuelle du compteur : {{ counter | async }}</h2>
 <p [appBorderHover]="2" [color]="'green'">
   Integer posuere, metus nec auctor convallis, sem nunc imperdiet felis, sed consectetur elit ligula non enim. Praesent vulputate auctor enim, consequat luctus ante volutpat id. Vestibulum id sem tellus. Cras nisi velit, finibus sit amet vehicula a, euismod sed diam. Proin consectetur malesuada metus sit amet rutrum. Mauris et odio sed sem egestas lobortis. Sed eget mattis eros. Nullam sit amet varius eros. In nisi metus, feugiat eget nisi ac, lobortis elementum massa. Curabitur consectetur efficitur tincidunt. Mauris elementum ullamcorper imperdiet. Nunc sed nisl id dolor feugiat sollicitudin in non nulla.
 </p>
+<app-make-blink [time]="300">
+  <h2 class="keepsize">Mon super titre qui clignote</h2>
+</app-make-blink>
 <p [appBorderHover] color="red">
   Integer posuere, metus nec auctor convallis, sem nunc imperdiet felis, sed consectetur elit ligula non enim. Praesent vulputate auctor enim, consequat luctus ante volutpat id. Vestibulum id sem tellus. Cras nisi velit, finibus sit amet vehicula a, euismod sed diam. Proin consectetur malesuada metus sit amet rutrum. Mauris et odio sed sem egestas lobortis. Sed eget mattis eros. Nullam sit amet varius eros. In nisi metus, feugiat eget nisi ac, lobortis elementum massa. Curabitur consectetur efficitur tincidunt. Mauris elementum ullamcorper imperdiet. Nunc sed nisl id dolor feugiat sollicitudin in non nulla.
 </p>
+<app-make-blink>
+  <h2>Autre super titre</h2>
+</app-make-blink>
+<p>Oulalala ça bouge</p>

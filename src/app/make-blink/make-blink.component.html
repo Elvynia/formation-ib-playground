@@ -1,0 +1,6 @@
+<div [hidden]="!visible">
+    <ng-content></ng-content>
+</div>
+<div [ngStyle]="{ visibility: visible ? 'visible' : 'hidden' }">
+    <ng-content select=".keepsize"></ng-content>
+</div>
